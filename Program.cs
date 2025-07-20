@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using store_api.Data;
 
@@ -13,17 +14,29 @@ builder.Services.AddDbContext<ApplicationDbItem>(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", 
+    options.AddPolicy("AllowAll", 
     policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:4200", "http://localhost:5173")
-            .AllowCredentials()
+        policy.AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader();
     });
 });
 
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo 
+    { 
+        Title = "Store API", 
+        Version = "v1" 
+    });
+});
+
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
+    options.HttpsPort = 5001;
+});
 
 var app = builder.Build();
 
@@ -50,14 +63,20 @@ if (app.Environment.IsDevelopment())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store API V1");
+        c.DefaultModelsExpandDepth(-1);
+        c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
+    });
 }
 
-app.UseHttpsRedirection();
-
+app.UseCors("AllowAll");
+// Comment out HTTPS redirection for now
+// app.UseHttpsRedirection();
 app.UseAuthorization();
 
-app.MapControllers().RequireCors("AllowFrontend");
+app.MapControllers().RequireCors("AllowAll");
 
 using (var scope = app.Services.CreateScope())
 {
