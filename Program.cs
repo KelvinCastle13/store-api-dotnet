@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using store_api.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -88,3 +89,5 @@ using (var scope = app.Services.CreateScope())
     }
 }
 app.Run();
+
+public partial class Program { }
