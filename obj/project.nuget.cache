@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xcB1H2nh3r0=",
+  "dgSpecHash": "hN6AqLAy0Uc=",
   "success": true,
   "projectFilePath": "/Users/krowbar/Actualize/store-app/store-api/store-api.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "/Users/krowbar/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.7/microsoft.entityframeworkcore.relational.9.0.7.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/microsoft.entityframeworkcore.sqlite/9.0.7/microsoft.entityframeworkcore.sqlite.9.0.7.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/9.0.7/microsoft.entityframeworkcore.sqlite.core.9.0.7.nupkg.sha512",
+    "/Users/krowbar/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.7/microsoft.extensions.caching.abstractions.9.0.7.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/microsoft.extensions.caching.memory/9.0.7/microsoft.extensions.caching.memory.9.0.7.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.7/microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
@@ -39,6 +40,10 @@
     "/Users/krowbar/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "/Users/krowbar/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/krowbar/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/krowbar/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/krowbar/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
     "/Users/krowbar/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",

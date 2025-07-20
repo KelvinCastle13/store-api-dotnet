@@ -151,3 +151,7 @@
 /Users/krowbar/Actualize/store-app/store-api/obj/Debug/net9.0/store-api.pdb
 /Users/krowbar/Actualize/store-app/store-api/obj/Debug/net9.0/store-api.genruntimeconfig.cache
 /Users/krowbar/Actualize/store-app/store-api/obj/Debug/net9.0/ref/store-api.dll
+/Users/krowbar/Actualize/store-app/store-api/obj/Debug/net9.0/store-api.sourcelink.json
+/Users/krowbar/Actualize/store-app/store-api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/krowbar/Actualize/store-app/store-api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/krowbar/Actualize/store-app/store-api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
